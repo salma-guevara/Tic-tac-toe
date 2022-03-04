@@ -1,0 +1,94 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenedor{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://miaumor.com/wp-content/uploads/2020/04/Webp.net-resizeimage-3.jpg"); /*Para agregar fondo de imagen*/
+    /* background-image: url("http://st.depositphotos.com/2275299/2501/v/950/depositphotos_25013829-Funny-cats.-Cartoon-seamless-pattern-for-children-background.-Colorful-wallpaper-with-cats-butterflies-and-flowers.jpg"); */
+    /*background-size: cover; Para ajustar el tamaño porque si no va a salir la imagen en cuadritos*/
+}
+
+.cuadro{
+    border: 0px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Lo divide en 3 fracciones iguales*/
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: blueviolet;
+}
+
+.cuadro div{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Para cambiarle el tipo de letra*/
+}
+
+/*Para hacer un hoover y del efecto de que algo le está pasando encima*/
+.cuadro div:hover{
+    background-color: rgba(218, 218, 218, 1);
+    /* filter: brightness(1.5); Otra forma de hoovearlo. Oscurecer o aclarar.*/
+    cursor: pointer;
+}
+
+button{
+    padding: 20px 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    outline: none;
+    border: 0px;
+    border-radius: 8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(156, 113, 197);
+}
+
+.lineContainer{
+    position: relative;   
+}
+
+#linea{
+    position: absolute;
+    display: block;
+    background-color: rgb(11, 100, 122);
+}
+
+/*
+.lineaHorizontal{
+    height: 10px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.lineaVertical{
+    position: absolute;
+    display: block;
+    height: 100%;
+    background-color: rgb(11, 100, 122);
+    width: 10px;
+    top: 0px;
+    left: 0px;
+}
+*/
+
